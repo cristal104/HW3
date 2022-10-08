@@ -25,7 +25,7 @@
     
             .introduction {
                 background-color:lavenderblush;
-                height: 500px;
+                height: 900px;
                 float: left;
                 width: 20%;
                 text-align: left;
@@ -33,7 +33,6 @@
     
             p {
                 padding-left: 10px;
-               
                 margin: 0px;
             }
             .profileImage {
@@ -42,21 +41,32 @@
                 margin-left: auto;
                 margin-right: auto;
             }
-            ul {
-                background-color: #efcece;
-                padding: 20px;
-            }
-            ul li {
-                background: lavenderblush;
+
+            .coreSkills {
+                background-color: bisque;
                 padding: 5px;
                 margin-left: 35px;
                 list-style-type: circle;
             }
+            table, th, td{
+
+                border: 3px solid black;
+                border-collapse: collapse;
+                text-align: left;
+            }
+            tr:nth-child(even){
+                background-color: blueviolet;
+            }
+            tr:nth-child(odd){
+                background-color: aquamarine;
+            }
+
+            h2{
+                font-family: Arial, sans-serif;
+                text-align: left;
+            }
         </style>
     </head>
-    
-    <body>
-    
         <body>
             <header class="navigation">
                 <nav>
@@ -75,23 +85,121 @@
                         Web Development and UI/UX design, with experience currently being applied in a Co-Op internship 
                         at <a href="https://hmis.hanford.gov/#imageLocTitle">Hanford Mission Integration Solutions</a>.
                     </p>
-                    <ul>
+                    <ul class="coreSkills">
                         <p><b>Core Skills</b></p>
                         <br>
                         <li>Knowledgable in Python, C++, Java, Netlogo, R, SQL</li>
-                        <li>Digitizatioon of records</li>
+                        <li>Digitization of records</li>
                         <li>Familiar with Data and Records Management</li>
                         <li>Proficient in Office 365</li>
                     </ul>
-                </div>
-                <main>
-                    <p>
-                        A lot of stuff here
-                    </p>
-                </main>
             </div>
-        </body>
-    
+            <main>
+                <section>
+                    <h2>Career Summary</h2>
+                    <table>
+                        <tr>
+                            <th>Work Experience</th>
+                            <th>Dates</th>
+                        </tr>
+                        <tr>
+                            <td>Hanford Mission Integration Solutions, LLC
+                                <ul>
+                                    <li>Current Internship</li>
+                                    <li>Coordinated and led meetings with executive leadership, directors, managers, and subject matter experts to review, collaborate, and determine direction of website content.</li>
+                                </ul>
+                            </td>
+                            <td>June 2022 - Present</td>
+                        </tr>
+                        <tr>
+                            <td>ANR Group Inc.
+                                <ul>
+                                    <li>Summer Internship</li>
+                                    <li>Collaborated weekly with co-interns to brainstorm and implement new pages, layout concepts, and website designs</li>
+                                    <li>Developed training material and documentation for website updating and maintenance</li>
+                                </ul>
+                            </td>
+                            <td>June 2021 - August 2021</td>
+                        </tr>
+                    <tr>
+                        <td>Mission Support Alliance, LLC
+                            <ul>
+                                <li>High School Internship</li>
+                                <li>Recorded and digitized culturally sensitive records, assisted with curation management and logistics, responsible for digitization of culturally sensitive records for the Hanford History Project Repository</li>
+                            </ul>
+                        </td>
+                        <td>September - July 2020</td>
+                    </tr>
+                </table>
+
+            </section>
+            <section>
+                <h2>Education and Qualifications</h2>
+                <table>
+                    <caption>Education</caption>
+                    <tr>
+                        <th>Institutions</th>
+                        <th>Dates</th>
+                    </tr>
+                    <tr>
+                        <td>Gonzaga University
+                            <ul>
+                                <li>Bachelor of Science in Computer Science</li>
+                                <li>Minor in Applied Mathematics</li>
+                            </ul>
+                        </td>
+                        <td>August 2020 - May 2024</td>
+                    </tr>
+                </table>
+                <table>
+                    <caption>Work Experience</caption>
+                    <tr>
+                        <th>Work Experience</th>
+                        <th>Dates</th>
+                    </tr>
+                    <tr>
+                        <td>Hanford Mission Integration Solutions, LLC
+                            <ul>
+                                <li>Current Co-Op Internship</li>
+                            </ul>
+                        </td>
+                        <td>June 2022 - Present</td>
+                    </tr>
+                    <tr>
+                        <td>ANR Group Inc.
+                            <ul>
+                                <li>Summer Internship</li>
+                            </ul>
+                        </td>
+                        <td>June 2021 - August 2021</td>
+                    </tr>
+                    <tr>
+                        <td>Mission Support Alliance, LLC
+                            <ul>
+                                <li>High School Internship</li>
+                            </ul>
+                        </td>
+                        <td>September - July 2020</td>
+                    </tr>
+                </table>                
+            </section>
+            <section>
+                <h2>Interests and Hobbies</h2>
+                <ol >
+                    <li>Programming</li>
+                    <li>Reading</li>
+                    <li>Solving Rubix Cube</li>
+                </ol>
+                <p>
+                    Click the Rubix Cube to get a tutorial for how to solve the cube. 
+                    <a href="https://ruwix.com/the-rubiks-cube/how-to-solve-the-rubiks-cube-beginners-method/">
+                        <img src="rubix.jpeg" alt="rubix cube" width="73">
+                    </a>
+                </p>
+            </section>
+        </main>
+    </div>
     </body>
+
     
-    </html>
+</html>
