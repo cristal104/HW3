@@ -3,6 +3,14 @@
     Class: CPSC 332, Fall 2022
     Assignment: HW3 - CSS
     Date Modified: 10/07/22
+    Inline comment: this is a inline comment because I wanted to have the extra credit be found easily
+                    line 257
+
+    EXTRA CREDIT Custom Font: I have added one font (Arial) for headers and one font (Geneva)
+                              for the body text so the headers and text so the user can tell apart the
+                              headers easily and be able to look for a certain thing on the CV.
+    EXTRA CREDIT Special Effect: I added a text shadow to point out the Rubix Cube tutorial. I made the color
+                                 follow the pastel color palette
 -->
     <!DOCTYPE html>
     <html lang="en">
@@ -15,13 +23,15 @@
             body {
                 width: 100%;
                 margin: 0px auto;
-                font-family: Arial, Helvetica, sans-serif;
+                /* EXTRA CREDIT custom font */
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
             }
     
             .navigation {
                 background-color: mistyrose;
                 line-height: 50px;
                 text-align: center;
+                /* EXTRA CREDIT custom font */
                 font-family: Arial, Helvetica, sans-serif;
             }
     
@@ -84,6 +94,7 @@
 
 
             h2{
+                /* EXTRA CREDIT custom font */
                 font-family: Arial, sans-serif;
                 text-align: justify;
             }
@@ -243,7 +254,9 @@
                     <li>Reading</li>
                     <li>Solving Rubix Cube</li>
                 </ol>
-                <p>
+                <!--EXTRA CREDIT special effect-->
+                <!--Inline comment: this is a inline comment because I wanted to have the extra credit be found easily-->
+                <p style="text-shadow: 0 0 3px darksalmon;">
                     Click the Rubix Cube to get a tutorial for how to solve the cube. 
                     <a href="https://ruwix.com/the-rubiks-cube/how-to-solve-the-rubiks-cube-beginners-method/">
                         <img src="rubix.jpeg" alt="rubix cube" width="73">
@@ -251,5 +264,5 @@
                 </p>
             </section>
         </main>
-</body>
+    </body>
 </html>
